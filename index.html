@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       body {
+        background-image: url("https://i.ibb.co/tMJ5PdM/SAMERA-JOHN-DAVE-D.jpg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        margin: auto;
+        background-attachment: fixed;
+        border: 2px solid #aeaeae;
+        border-top: 5px solid #aeaeae;
+        box-shadow: 6px 6px 6px 8px #000000d3;		
+        max-width: 300px;
+        max-height: auto;
+        
+        }
+         .alpha {
+        background-color: #caffaa;
+        opacity: 0.8;
+        margin: auto;
+        margin-top: 10px;
+        border: 1px solid #1b1b1b;
+        border-radius: 10%;
+        box-shadow: 6px 6px 8px #000000d3;		
+        height: 200px;
+        width: 200px;
+        z-index: 1;
+            
+        }
+        .beta {
+        
+        background-color: #caffaa;
+        opacity: 0.7;
+        border: 1px solid #1b1b1b;
+        border-radius: 30%;
+        box-shadow: 6px 6px 8px #000000d3;		
+        margin: auto;
+        margin-top: 10px;
+        margin-left: 25px;     
+        height: 50px;
+        width: 250px;
+        z-index: 2;
+        
+            
+        }
+         .beta2 {
+        background-color: #00ff2d;
+        
+        margin-top: 50px;
+        
+        
+        
+        
+        height: 40px;
+        width: 40px;
+        
+            
+        }
+        #main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+    
+    
+/* Styling for the menu */
+      .menu {
+        display: inline-block;
+        position: relative;
+      }
+
+      /* Styling for the floating tab */
+      .floating-tab {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border: 1px solid #1b1b1b;
+        background-color: #caffaa;
+        box-shadow: 6px 6px 6px #000000d3;		
+        padding: 10px;
+        
+      }
+
+      /* Styling for the menu item that will trigger the floating tab */
+      .menu-item {
+        display: inline-block;
+        padding: 10px;
+        cursor: pointer;
+      }
+</style>  
+    
+</head>
+<body >
+    
+    
+    
+  
+ <div class="beta" style="position: fixed">
+    
+   <div class="menu">
+      <div class="menu-item" onclick="showFloatingTab()">&#9776 Menu </div>
+      
+      <div class="floating-tab" id="floatingTab">
+        <a href="https://google.com">Google</a>
+        <p>This is the content of the floating tab.</p>
+        <hr>
+        <ul>
+            <li><a href="https://google.com/">Home</a></li>
+        </ul>
+        <p>elaboraret deseruisse expetendis alienum corrumpit vivamus tacimates option percipit velit veniam metus neglegentur alterum porta electram magna primis odio posuere</p>>
+      </div>
+    </div>      
+      </div>
+      
+      <div>
+ <div class="alpha" style="margin-top: 75px">
+   <center><img style="margin-top: 50px" src="./img/logo_html.png" width="100" height="100" style="border-radius: 100%"></center>  
+ </div>
+ <div class="alpha">
+     
+ </div>
+ <div class="alpha">
+     
+ </div>
+ <div class="alpha">
+     
+ </div></div>
+ 
+ </div>
+ 
+ 
+    <script>
+      function showFloatingTab() {
+        var floatingTab = document.getElementById("floatingTab");
+        if (floatingTab.style.display === "block") {
+          floatingTab.style.display = "none";
+        } else {
+          floatingTab.style.display = "block";
+        }
+      }
+    </script>
+    
+</body>
+</html>
